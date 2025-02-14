@@ -55,7 +55,7 @@ const About = () => {
         </div>
         <hr />
         <div className="about-achievement">
-            <h1>Top 7.7%</h1>
+            <h1>Top 6.5%</h1>
             <p>ON LEETCODE</p>
         </div>
       </div>

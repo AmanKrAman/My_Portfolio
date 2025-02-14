@@ -32,13 +32,22 @@
     gap: 40px;
 }
 
-.mywork-container img{
-    box-sizing: border-box;
+.mywork-container .work-item {
+    position: relative;
     width: 419px;
     height: 280px;
+    overflow: hidden;
+    cursor: pointer; 
+}
+
+.mywork-container img{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
     transition: 0.3s;
     cursor: pointer;
 }
+
 
 .mywork-container img:hover{
     transform: scale(1.10);
@@ -64,4 +73,36 @@
 .myword-showmore:hover{
     gap: 30px;
     transition: 0.6s;
+}
+
+
+.mywork-container .hover-text {
+    position: absolute;
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);  
+    color: #fffefe;  
+    font-size: 30px;
+    font-weight: 600;  
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+    text-align: center;
+    z-index: 1;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.mywork-container .work-item:hover .hover-text {
+    visibility: visible;
+    opacity: 1;
+}
+    
+.mywork-container .work-item-link {
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Inherit text color from parent */
+}
+
+.myword-showmore-link {
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Inherit text color from parent */
 }
