@@ -58,14 +58,16 @@ const Navbar = () => {
     <div className='navbar'>
       <div className="nav-logo">
         <img src={logo} alt="Logo" />
+        <img src="" alt="" />
       </div>
         <ul className="nav-menu">
+          <img src="" alt="" className='mav-mob-close'/>
             <li><AnchorLink className='anchor-link' href='#home'><p onClick={()=> setMenu("home")}>Home</p></AnchorLink>  {menu ==="home"?<img src={theme_pattern} alt="" className="home-theme-pattern" />:<></>}</li>
             <li><AnchorLink className='anchor-link' offset={50} href='#about'><p onClick={()=> setMenu("about")}>About Me</p></AnchorLink>{menu ==="about"?<img src={theme_pattern} alt="" className="home-theme-pattern" />:<></>}</li>
             <li><AnchorLink className='anchor-link' offset={50} href='#projects'><p onClick={()=> setMenu("projects")}>Projects</p></AnchorLink>{menu ==="projects"?<img src={theme_pattern} alt="" className="home-theme-pattern" />:<></>}</li>
             <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p onClick={()=> setMenu("contact")}>Contact</p></AnchorLink>{menu ==="contact"?<img src={theme_pattern} alt="" className="home-theme-pattern" />:<></>}</li>
         </ul>
-        <div className="nav-connect">Connect With Me</div>
+        <div className="nav-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink></div>
     </div>
   )
 }
