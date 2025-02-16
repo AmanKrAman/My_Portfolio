@@ -10,8 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "dotenv": "^16.4.7",
-    "dotenv-webpack": "^8.1.0",
     "path": "^0.12.7",
     "react": "^19.0.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",

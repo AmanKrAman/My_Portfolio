@@ -11,9 +11,11 @@ const Contact = () => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "");
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+    formData.append("access_key", accessKey);
+    
 
-    const object = Object.fromEntries(formData);
+    const object = Object.fromEntries(formData);  
     const json = JSON.stringify(object);
 
     try {
@@ -29,6 +31,7 @@ const Contact = () => {
       if (res.success) {
         console.log("Success", res);
         toast.success("Submitted successfully!");
+        event.target.reset();
       } else {
         console.error("Form submission failed", res);
         toast.error("Failed to submit form. Please try again.");
