@@ -80,9 +80,9 @@ const Contact = () => {
         </div>
         <form onSubmit={onSubmit} className="contact-right">
           <label htmlFor="">Your Name:</label>
-          <input type="text" placeholder="Enter your full name" name="name" />
+          <input type="text" placeholder="Enter your full name" name="name" required/>
           <label htmlFor="">Your Email:</label>
-          <input type="email" placeholder="Enter your Email" name="email" />
+          <input type="email" placeholder="Enter your Email" name="email" required/>
           <label htmlFor="">Write your message here:</label>
           <textarea
             name="message"
