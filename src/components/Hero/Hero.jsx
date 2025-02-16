@@ -8,9 +8,9 @@ const Hero = () => {
   return (
     <div id = "home" className="hero">
       <img src={profile_img} alt="" />
-      <h1><span>I am Aman kumar,</span> Backend Developer based in India.</h1>
+      <h1><span>I am Aman kumar,</span> Software engineer based in India.</h1>
       <p>
-        Software engineer with expertise in Data Structures, Algorithms,
+        with expertise in Data Structures, Algorithms,
         software development, machine learning, LLD, HLD, and web applications.
         Proficient in C++, Python, JavaScript, with a focus on ML algorithms.
         Experienced in building and deploying scalable applications. Proven in
