@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import profile_pic from "../../assets/profile_pic.svg";
+import Display_pic from "../../assets/Display_pic.jpg";
 import theme_pattern from "../../assets/theme_pattern.svg";
 
 const About = () => {
@@ -12,7 +12,7 @@ const About = () => {
       </div>
       <div className="about-sections">
         <div className="about-left">
-          <img src={profile_pic} alt="" />
+          <img src={Display_pic} alt="" />
         </div>
         <div className="about-right">
           <div className="about-para">

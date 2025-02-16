@@ -1,13 +1,13 @@
 import React from "react";
 import "./Hero.css";
-import profile_img from "../../assets/profile_img.svg";
+import profile_aman from "../../assets/profile_aman.png";
 import AmanResume from "../../assets/AmanResume.pdf";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Hero = () => {
   return (
     <div id = "home" className="hero">
-      <img src={profile_img} alt="" />
+      <img src={profile_aman} alt="" />
       <h1><span>I am Aman kumar,</span> Software engineer based in India.</h1>
       <p>
         with expertise in Data Structures, Algorithms,
