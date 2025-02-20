@@ -46,7 +46,7 @@ const Contact = () => {
     <div id="contact" className="contact">
       <div className="contact-title">
         <h1>Get in touch</h1>
-        <img src={theme_pattern} alt="" />
+        {/* <img src={theme_pattern} alt="" /> */}
       </div>
       <div className="contact-section">
         <div className="contact-left">
