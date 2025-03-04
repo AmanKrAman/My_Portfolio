@@ -16,6 +16,14 @@
     width: 50px;
 }
 
+/* html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+} */
+
 .nav-menu {
     display: none; 
     flex-direction: column;
